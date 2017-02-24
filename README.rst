@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    In [1]: from pywe_exception import WeChatException
+    In [1]: from pywe_exception import WeChatException, WeChatPayException
 
     In [2]: raise WeChatException({"errcode": 40125, "errmsg": "invalid appsecret, view more at http://t.cn/RAEkdVq hint: [MVpSma0994e544]"})
     ---------------------------------------------------------------------------
@@ -35,4 +35,8 @@ Method
 
     class WeChatException(Exception):
         """ WeChatException """
+
+
+    class WeChatPayException(Exception):
+    """ WeChatPayException """
 
